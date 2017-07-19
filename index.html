@@ -1,0 +1,68 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Bubblemeter</title>
+
+  <meta name="description"
+        content="What's Trending on Google Search">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta property="og:url" content="http://tamirp.com/datahack2016/"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Search Trends Bubblemeter"/>
+  <meta property="og:site_name" content="Search Trends Bubblemeter"/>
+  <meta property="og:description"
+        content="What's Trending on Google Search"/>
+  <meta property="og:image" content="http://tamirp.com/datahack16/screen.png"/>
+  <meta property="og:image:url" content="http://tamirp.com/datahack16/screen.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:image:type" content="image/png"/>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+</head>
+<body id="top">
+<input type='text' id='search'>
+<div id='feed'>
+<div class='title-static'><br>This experiment shows the trending topics on google search, day by day. This is about
+<div list-id="99999" data-search="9999999999999" data-date="1/1/2016" data-size="1.3" class="title active" style="color:#E91E63" title-color="#E91E63">100,000</div> 
+searches per month. this is 
+<div list-id="99998" data-search="9999999999998" data-date="1/1/2016" data-size="13" class="title active" style="color:#00BCD4" title-color="#00BCD4">1,000,000</div>.
+</div>
+</div>
+<div class='title-static' id='aboutdiv'><div class='spacertwo'></div>All data was collected from <a href='https://support.google.com/trends/answer/6248110?hl=en&ref_topic=6248107' target ='_blank'>Google Trends<div class="tooltip"><i class="material-icons">launch</i></div></a>, search volume measured by <a href='https://support.google.com/adwords/answer/3097241?hl=en'  target ='_blank'>Adwords<div class="tooltip"><i class="material-icons">launch</i></div></a> Designed and coded by <a href='http://www.tamirp.com/' target ='_blank'>Tamir Pomerantz<div class="tooltip"><i class="material-icons">launch</i></div></a> for <a href='http://www.datahack-il.com/'  target ='_blank'>Datahack-IL<div class="tooltip"><i class="material-icons">launch</i></div></a> Hackathon, September 22nd 2016<br><br></div>
+
+<div id='datelabel'></div>
+<div id='aboutlabel'>About↓</div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+
+<script src="js/vendor/Matter.js"></script>
+
+<script src="js/app/main.js"></script>
+<script src="js/app/background.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-71087902-5', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

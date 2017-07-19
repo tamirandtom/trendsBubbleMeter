@@ -1,0 +1,169 @@
+@import 'https://fonts.googleapis.com/css?family=Space+Mono';
+/*@import 'https://fonts.googleapis.com/css?family=Miriam+Libre';*/
+
+.spacertwo {
+  height:2em;
+  width:100%;
+}
+#search {display:none;}
+#datelabel {
+
+  position:fixed;
+  top:0px;
+  width:100%;
+}
+#aboutlabel {
+
+  position:fixed;
+  bottom:0px;
+  right:0px;
+}
+
+body, html {
+  padding: 0 12px;
+  font-family: 'Space Mono', monospace;
+  font-weight:700; 
+}
+
+    html { overflow-x: hidden; }
+
+
+
+canvas {
+  display: inline-block;
+  width: 100vw;
+  height: 100vh;
+  z-index:100;
+  position:fixed;
+  pointer-events:none;
+  top:0px;
+  left:0px;
+}
+
+canvas:active { 
+  cursor: pointer;
+  cursor: -webkit-grabbing;
+}
+
+.feed {margin:24px;}
+.title-color-1 { color:#EF5350 ;}
+.title-color-2 { color:#26A69A ;}
+.title-color-3 { color:#D4E157 ;}
+.title-color-4 { color:#AB47BC ;}
+.title-color-5 { color:#29B6F6 ;}
+.title-color-6 { color:#5C6BC0 ;}
+
+
+.title,.title-static-infeed,.title-static,#aboutlabel, #datelabel{ 
+  -webkit-transition: all .3s; /* Safari */
+  transition: all .3s;
+  display:inline;
+  font-size: 72px;
+  line-height: 84px;
+}
+
+.title-static  a { 
+  color:#777;
+  text-decoration:none;
+}
+.title-static  a:hover { 
+  color:#333;
+}
+.title-static  a .material-icons { 
+font-size:52px;
+}
+.title-static-infeed {
+  color:#000;
+}
+.title-static {
+  color:#aaa;
+}
+
+.tooltip {
+  display: inline;
+  position: relative;
+  top: 6px;
+}
+.not-slected {
+  color:#eee !important;
+}
+
+/*
+
+[tooltip]:before {
+
+    content: attr(tooltip);
+    position: absolute;
+    opacity: 0;
+    
+
+    transition: all 0.25s ease;
+    padding: 12px;
+    width:200px;
+    color: #000;
+    z-index:150;
+    border-radius: 3px;
+    font-size:14px;
+    line-height:16px;
+    box-shadow: 2px 2px 1px silver;    
+}
+
+[tooltip]:hover:before {
+
+    opacity: 1;
+    
+
+    background: #fff;
+    margin-top: 10px;
+    margin-left: 10px;    
+}
+
+[tooltip]:not([tooltip-persistent]):before {
+    pointer-events: none;
+}*/
+
+
+
+  /*tablet*/
+  @media (min-width: 640px) and (max-width: 1024px) {
+.title-static  a .material-icons { 
+font-size:38px;
+}
+
+
+.tooltip {
+  display: inline;
+  position: relative;
+  top: 6px;
+}
+
+.title,  .title-static, #aboutlabel, #datelabel,.title-static-infeed{ 
+
+  font-size: 48px;
+  line-height: 54px;
+
+}
+
+   }
+  /*mobile*/
+  @media (max-width: 640px) {
+    .tooltip {
+  display: inline;
+  position: relative;
+  top: 4px;
+}
+
+.material-icons {font-size:16px;}
+.title-static  a .material-icons { 
+font-size:24px;
+}
+
+.title,  .title-static, #aboutlabel, #datelabel,.title-static-infeed{ 
+
+  font-size: 28px;
+  line-height: 42px;
+
+}
+
+
+    }
